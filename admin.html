@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title></title>
+
+<!-- logo -->
+     <link rel="icon" href ="/image/M-logo (2).png">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--links-->
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="icon/user-icon.css">
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <a class="navbar-brand" href="{{ route('home') }}" >QR 
+            <img class="img" src="/image/M-logo (2).png">
+        </a>
+       
+
+      
+            <a href="{{ route('home') }}" class="me-3">Dashboard</a>
+            <a href="{{ route('create') }}" class="me-3">users</a>
+            <a href="{{ route('dashboard') }}" class="me-3">QR codes</a>
+            <a href="{{ route('scan') }}" class="me-3">Settings</a>
+        
+        <div>
+        <iframe class="icon-user-admin" src="icon/user-icon.html"></iframe>
+        </div>
+       
+    </div>
+</nav>
+
+<!--massage-->
+<div class="massage">
+<h1 class="WELCOME">
+Welcome, Admin!
+</h1>
+<p class="Create">Manage users and monitor </p>
+<p class="in">all QR activities.</p>
+
+</div>  
+<!-- Dchbourd -->
+ <!-- Cards -->
+  <div class="cards">
+    <div class="card">Users: 120</div>
+    <div class="card">QR Codes: 300</div>
+    <div class="card">Visits: 1,200</div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-box">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+        
+      </tr>
+
+      <tr>
+      <td data-label="Name">Ali</td>
+      <td data-label="Email">ali@email.com</td>
+          <td class="action" data-label="Action">
+             <button class="edit">Edit</button>
+             <button class="delete">Delete</button>
+             <button class="delete">BAN</button>
+        </td>
+      </tr>
+
+      <tr>
+      <td data-label="Name">Ahmed</td>
+      <td data-label="Email">ahmed@mail.com</td>
+          <td class="action" data-label="Action">
+             <button class="edit">Edit</button>
+             <button class="delete">Delete</button>
+             <button class="delete">BAN</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2026 QR Code Project</p>
+</footer>
+
+</body>
+</html>
